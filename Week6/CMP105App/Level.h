@@ -4,6 +4,8 @@
 #include "Framework/Input.h"
 #include <string.h>
 #include <iostream>
+#include "Ball.h"
+#include "Goomba.h"
 
 
 class Level{
@@ -25,4 +27,9 @@ private:
 	Input* input;
 
 	// More level variables
+	Ball ball;
+	sf::Texture ballTexture;
+
+	Goomba goomba;
+	sf::Texture goombaTexture;
 };
